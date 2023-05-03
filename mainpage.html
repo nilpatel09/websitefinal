@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="design.css">
+        <script src="more.js"></script> 
+    </head>
+    <body onload = "startTime()" id="fort">
+
+
+
+
+        <!-- navigation bar -->
+        <section id="header">
+            <a href="#"><img src="/Users/nil/Desktop/final project/logo.png" class="logo" alt="logo" width="100" height="100"></a>
+            <div>
+                <ul id="navbar">
+                    <li><a href="mainpage.html">Home</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    
+                </ul>
+            </div>
+        </section>  
+        <!-- end of navigation bar-->
+
+
+<!-------buttons---------->
+<!-- start of chatbot-->
+<div id="buttonsandchat">
+    <div id="button-container">
+        <ul>
+            <li><button onclick="location.href='newstudent.html'">For new students</button></li>
+        <li><button onclick="location.href='existing.html'">For existing students</button></li>
+        </ul>
+      </div>      
+        <div class="chat-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+              <h4 style="color:brown">Help Center</h4>
+          
+              <label for="msg"><b>Enter your message below</b></label>
+              <textarea placeholder="Type message.." name="msg" required></textarea>
+          
+              <button type="submit" class="btn">Send</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+          </div>
+<!--end of chatbot-->
+
+<!--start of live clock-->
+<div class = "clock" id="clock">
+    <p id="clock"></p>
+	<script>
+		function updateClock() {
+			var now = new Date();
+			var time = now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds();
+			document.getElementById('clock').innerHTML = time;
+			setTimeout(updateClock, 1000);
+		}
+		updateClock();
+	</script>
+</div>
+<!--End of live clock-->
+    </body>
+</html>
