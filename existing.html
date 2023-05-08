@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Student Attendance</title>
+	<link rel="stylesheet" href="stylees.css">
+	<script src="functiones.js"></script>
+</head>
+<body>
+	<h1>Student Attendance</h1>
+	<form id="attendance-form">
+		<label for="student-name">Name:</label>
+		<input type="text" id="student-name" name="student-name">
+		<label for="student-id">ID:</label>
+		<input type="text" id="student-id" name="student-id">
+        <label for="password">password:</label>
+		<input type="text" id="password" name="password">
+        <label for="attendance-date">Date:</label>
+		<input type="date" id="attendance-date" name="attendance-date">
+		<input type="submit" value="Submit" onclick="submitAttendance()">
+	</form>
+    <button class="home-button" onclick="location.href='mainpage.html'">Home</button>
+</body>
+</html>
